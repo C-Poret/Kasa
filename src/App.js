@@ -10,16 +10,16 @@ import Footer from "./components/Footer";
 const App = () => {
     return (
         <div className="App">
-            <Header />
-                <Router>
+            <Router>
+                <Header />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/logement" element={<Logement />} />
                         <Route path="*" element={<Error />} />
                         <Route path="/about" element={<About />} />
                     </Routes>
-                </Router>
-            <Footer />
+                <Footer />
+            </Router>
         </div>
     );
 };
