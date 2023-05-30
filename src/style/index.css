@@ -1,4 +1,7 @@
-@import "font.css";
+@import "global.css";
 @import "header.css";
 @import "footer.css";
+@import "hidden.css";
 @import "error.css";
+@import "collapse.css";
+@import "banner.css";
