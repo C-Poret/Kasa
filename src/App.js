@@ -9,12 +9,12 @@ import Footer from "./components/Footer";
 
 const App = () => {
     return (
-        <div className="App">
+        <div className="app">
             <Router>
                 <Header />
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/logement" element={<Logement />} />
+                        <Route path="/logement/:id" element={<Logement />} />
                         <Route path="*" element={<Error />} />
                         <Route path="/about" element={<About />} />
                     </Routes>

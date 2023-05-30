@@ -1,11 +1,11 @@
 import React from 'react';
-import BannerImg from "../assets/Banner_Home.svg";
+import BannerImg from "../assets/Banner_Home.jpg";
 
 const Banner = () => {
     return (
         <div className='containerBanner'>
             <img src={BannerImg} alt="Paysage en bordure de mer" />
-            <h2>Chez vous, partout et aileurs</h2>
+            <h1>Chez vous, partout et ailleurs</h1>
         </div>
     );
 };

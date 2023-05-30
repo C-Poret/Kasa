@@ -2,9 +2,9 @@ import React from 'react';
 
 const Logement = () => {
     return (
-        <div>
+        <main>
             
-        </div>
+        </main>
     );
 };
 
