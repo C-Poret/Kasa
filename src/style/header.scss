@@ -16,7 +16,11 @@ ul {
 }
 
 ul a {
-    color: #FF6060;
+    color: $red;
     text-decoration: none;
-    font-size: 24px;
+    font-size: $mediumFont;
+}
+
+.active {
+    text-decoration: underline;
 }
