@@ -19,6 +19,16 @@
     top: 5px;
 }
 
+.flecheBas {
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+
+.flecheHaut {
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
 .titleCollapse h3 {
     font-weight: normal;
     margin: 0;
@@ -30,12 +40,13 @@
     padding: 0 2%;
     color: $red;
     border-radius: 0 0 5px 5px;
+    overflow: hidden;
 }
 
 .hidden {
-    display: none;
+    transition: height ease-out 0.5s;
 }
 
 .visible {
-    display: block;
+    transition: height ease-in 0.5s;
 }

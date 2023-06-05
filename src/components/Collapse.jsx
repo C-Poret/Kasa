@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import FlecheB from "../assets/Fleche_Bas.svg";
-import FlecheH from "../assets/Fleche_Haut.svg";
 
 const Collapse = ({title, content}) => {
 
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(true);
+    const contentRef = useRef();
 
     return (
         <div className='containerCollapse'>
             <div className='titleCollapse' onClick={() => setOpen(!open)}>
                 <h3>{title}</h3>
-                <img src={open ? FlecheB : FlecheH} alt="Fleche" />
+                <img className={open ? "flecheBas" : "flecheHaut" } src={FlecheB} alt="Fleche" />
             </div>
-            <div className={open ? "contentCollapse hidden" : "contentCollapse visible" }>
+            <div className={open ? "contentCollapse hidden" : "contentCollapse visible"} ref={contentRef} style={{ height: open ? "0" : `${contentRef.current.scrollHeight}px` }}>
                 <p>{content}</p>
             </div>
         </div>
