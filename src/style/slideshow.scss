@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2%;
+    margin: 0 5%;
     overflow: hidden;
 }
 
@@ -17,8 +17,8 @@
 .fleche {
     display: flex;
     justify-content: space-between;
-    width: 92%;
-    transform: translateY(-300%);
+    width: 85%;
+    position: absolute;
 }
 
 .fleche img {
@@ -28,5 +28,86 @@
 .containerCarrousel p {
     color: $white;
     font-size: $smallFont;
-    transform: translateY(-700%);
+    position: absolute;
+    transform: translateY(800%);
+}
+
+
+/* Responsive */
+@media (min-width: 1490.02px) {
+    .fleche {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1590.02px) {
+    .fleche {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1690.02px) {
+    .fleche {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1820.02px) {
+    .fleche {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1950.02px) {
+    .fleche {
+        width: 60%;
+    }
+}
+
+@media (min-width: 2120.02px) {
+    .fleche {
+        width: 55%;
+    }
+}
+
+@media (min-width: 2300.02px) {
+    .fleche {
+        width: 50%;
+    }
+}
+
+@media (min-width: 2560.02px) {
+    .fleche {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .containerPicture {
+        height: 350px;
+        border-radius: 20px;
+    }
+
+    .fleche {
+        height: 40px;
+    }
+
+    .containerCarrousel p {
+        transform: translateY(650%);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .containerPicture {
+        height: 255px;
+        border: 10px;
+    }
+
+    .fleche {
+        height: 20px;
+    }
+
+    .containerCarrousel p {
+        display: none;
+    }
 }

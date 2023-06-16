@@ -8,7 +8,7 @@
 }
 
 .containerBanner img {
-    width: 96%;
+    width: 90%;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
@@ -21,4 +21,45 @@
     font-size: 48px;
     font-weight: normal;
     transform: translateY(-130px);
+}
+
+
+/* Responsive */
+@media (max-width: 799.98px) {
+    .home {
+        height: 180px;
+    }
+
+    .home img {
+        height: 180px;
+        border-radius: 20px;
+    }
+
+    .home h1 {
+        font-size: $largeFont;
+        transform: translateY(-110px);
+    }
+}
+
+@media (max-width: 599.98px) {
+    .home {
+        height: 111px;
+    }
+
+    .home img {
+        height: 111px;
+        border-radius: 15px;
+    }
+
+    .home h1 {
+        font-size: $mediumFont;
+        transform: translateY(-70px);
+    }
+}
+
+@media (max-width: 425.98px) {
+    .home h1 {
+        width: 223px;
+        transform: translate(-40px, -85px);
+    }
 }

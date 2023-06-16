@@ -19,13 +19,12 @@ const Home = () => {
             <Banner />
             <div className='containerCard'>
                 {data.map((logement, id) => (
-                    <div className='logementCard'>
+                    <div className='logementCard' key={id} >
                         <div onClick={() => {navigate('/logement/' + logement.id)}} className='logementLink' key={id}>
                             <Card cover={logement.cover} title={logement.title} />
                         </div>
                     </div>
                 ))}
-
             </div>
         </main>
     );

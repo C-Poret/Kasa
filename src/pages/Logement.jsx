@@ -17,6 +17,7 @@ const Logement = () => {
     const infos = data.filter(logement => logement.id === id);
 
     const navigate = useNavigate();
+    useEffect
 
     if ( infos.length === 1) {
         return (
@@ -55,7 +56,9 @@ const Logement = () => {
             </main>
         )
     } else {
-        navigate("/error")
+        return (
+        navigate('/error')
+        )
     };
 };
 

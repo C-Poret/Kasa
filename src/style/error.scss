@@ -8,17 +8,52 @@
     color: $red;
     font-weight: 700;
     font-size: 288px;
-    margin-top: 100px;
+    margin-top: 140px;
     margin-bottom: 0;
 }
 
 .textError {
     color: $red;
     font-size: $largeFont;
+    text-align: center;
 }
 
 .linkError {
     color: $red;
     font-size: $smallFont;
-    margin: 150px 0;
+    margin: 135px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 1023.98px) {
+    .numberError {
+        font-size: 200px;
+    }
+
+    .textError {
+        font-size: $mediumFont;
+    }
+
+    .linkError {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .numberError {
+        font-size: 96px;
+        margin-top: 160px;
+    }
+
+    .textError {
+        font-size: $smallFont;
+        width: 90%;
+    }
+
+    .linkError {
+        font-size: 14px;
+        margin-bottom: 290px;
+    }
 }

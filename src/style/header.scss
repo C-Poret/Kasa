@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: 2%;
+    margin: 2% 5%;
 }
 
 ul {
@@ -23,4 +23,57 @@ ul a {
 
 .active {
     text-decoration: underline;
+}
+
+
+/* Responsive */
+@media (max-width: 1200.02px) {
+    ul {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1000.02px) {
+    ul {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768.02px) {
+    .logo {
+        height: 51px;
+    }
+
+    ul a {
+        font-size: $smallFont;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 699.98px) {
+    ul {
+        width: 35%;
+    }
+}
+
+@media (max-width: 599.98px) {
+    ul {
+        width: 40%;
+    }
+}
+
+@media (max-width: 529.98px) {
+    ul {
+        width: 45%;
+    }
+}
+
+@media (max-width: 469.02px) {
+    ul a {
+        font-size: 12px;
+    }
+
+    ul {
+        width: 40%;
+    }
 }

@@ -7,7 +7,7 @@ const Collapse = ({title, content}) => {
     const contentRef = useRef();
 
     return (
-        <div className='containerCollapse'>
+        <div>
             <div className='titleCollapse' onClick={() => setOpen(!open)}>
                 <h3>{title}</h3>
                 <img className={open ? "flecheBas" : "flecheHaut" } src={FlecheB} alt="Fleche" />
