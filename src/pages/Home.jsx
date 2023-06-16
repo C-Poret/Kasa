@@ -20,7 +20,7 @@ const Home = () => {
             <div className='containerCard'>
                 {data.map((logement, id) => (
                     <div className='logementCard' key={id} >
-                        <a onClick={() => {navigate('/logement/' + logement.id)}} className='logementLink'>
+                        <a onClick={() => {navigate('/logement/' + logement.id)}}>
                             <Card cover={logement.cover} title={logement.title} />
                         </a>
                     </div>
