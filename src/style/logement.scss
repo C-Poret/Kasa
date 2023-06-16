@@ -1,0 +1,98 @@
+.infoLogement {
+    margin-top: 30px;
+}
+
+.containerLogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+
+.containerLogementLeft {
+    width: 75%;
+}
+
+.containerLogementRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.containerLogement h2 {
+    color: $red;
+    font-size: $largeFont;
+    font-weight: normal;
+    margin: 0;
+}
+
+.containerLogement h3 {
+    color: $red;
+    font-size: $smallFont;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.containerLogement ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.containerLogement li {
+    display: flex;
+    justify-content: center;
+    color: $white;
+    background-color: $red;
+    font-size: 14px;
+    padding: 3.5px;
+    min-width: 108px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.containerHost {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerHost p {
+    display: flex;
+    align-items: center;
+    color: $red;
+    margin: 0 10px 0 0;
+}
+
+.containerHost img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.containerEtoile {
+    margin-bottom: 20px;
+}
+
+.containerEtoile img {
+    margin-left: 10px;
+}
+
+.containerCollapseLogement {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 110%;
+    position: relative;
+    right: 5%;
+}
+
+.collapseLogement {
+    width: 50%;
+}
+
+.collapseLogement li {
+    list-style: none;
+    margin-bottom: 5px;
+}
