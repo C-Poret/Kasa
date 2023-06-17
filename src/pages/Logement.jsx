@@ -17,7 +17,6 @@ const Logement = () => {
     const infos = data.filter(logement => logement.id === id);
 
     const navigate = useNavigate();
-    useEffect
 
     if ( infos.length === 1) {
         return (
