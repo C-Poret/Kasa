@@ -60,9 +60,19 @@
 
 /* Responsive */
 @media (max-width: 768.02px) {
+
     .containerCollapse {
         margin-left: 5%;
         margin-right: 5%;
         width: 90%;
+        font-size: 12px;
+    }
+
+    .titleCollapse {
+        font-size: 13px;
+    }
+
+    .flecheBas {
+        width: 16px;
     }
 }

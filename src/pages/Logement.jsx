@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import SlideShow from "../components/SlideShow";
 import Collapse from '../components/Collapse';
 import Rating from "../components/Rating";
+import Error from "../pages/Error"
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Logement = () => {
 
@@ -16,12 +17,12 @@ const Logement = () => {
     const { id } = useParams();
     const infos = data.filter(logement => logement.id === id);
 
-    const navigate = useNavigate();
+    
 
     if ( infos.length === 1) {
         return (
             <main>
-                {infos.map((logement, id) => (
+                {infos.map((logement) => (
                     <div key={logement} >
                         <SlideShow pictures={logement.pictures} />
                         <div className='infoLogement'>
@@ -30,7 +31,7 @@ const Logement = () => {
                                     <h2>{logement.title}</h2>
                                     <h3>{logement.location}</h3>
                                     <ul>
-                                        {logement.tags.map((tag) => <li key={tag} >{tag}</li>)}
+                                        {logement.tags.map((tag) => <li key={tag}>{tag}</li>)}
                                     </ul>
                                 </div>
                                 <div className='containerLogementRight'>
@@ -46,7 +47,7 @@ const Logement = () => {
                                     <Collapse title="Description" content={logement.description} />
                                 </div>
                                 <div className="collapseLogement">
-                                    <Collapse title="Equipements" content={logement.equipments.map((liste) => <li key={liste} >{liste}</li>)} />
+                                    <Collapse title="Equipements" content={logement.equipments.map((liste) => <li key={liste}>{liste}</li>)} />
                                 </div>
                             </div>
                         </div>
@@ -56,7 +57,7 @@ const Logement = () => {
         )
     } else {
         return (
-        navigate('/error')
+            <Error />
         )
     };
 };
