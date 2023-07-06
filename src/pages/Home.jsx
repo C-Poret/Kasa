@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Banner from "../components/Banner";
 import Card from "../components/Card";
-import axios from 'axios';
+import Data from "../data/logement.json";
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        axios.get('./logement.json').then((res) => setData(res.data));
-    }, []);
 
     const navigate = useNavigate();
 
@@ -18,7 +12,7 @@ const Home = () => {
         <main>
             <Banner />
             <div className='containerCard'>
-                {data.map((logement, id) => (
+                {Data.map((logement, id) => (
                     <div className='logementCard' key={id} >
                         <a onClick={() => {navigate('/logement/' + logement.id)}}>
                             <Card cover={logement.cover} title={logement.title} />
